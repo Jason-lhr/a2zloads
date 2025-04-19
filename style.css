@@ -1,8 +1,5 @@
-body {
-    background-image: url('https://json-lhr.github.io/a2zloads/assets/images/background-image.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
-    margin: 0;
-}
+/your-project-directory/
+  ├── index.html
+  └── assets/
+      └── css/
+          └── style.css
