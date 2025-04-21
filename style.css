@@ -1,0 +1,15 @@
+/* Set the background image */
+body {
+    background-image: url('path/to/your/image.jpg'); /* Update with the path to your image */
+    background-size: cover; /* Make sure the image covers the entire background */
+    background-position: center; /* Center the image */
+    background-attachment: fixed; /* Keep the background image fixed while scrolling */
+    margin: 0; /* Remove default margins */
+    height: 100vh; /* Make sure the body takes up the full viewport height */
+    color: white; /* Text color for contrast */
+}
+
+.content {
+    text-align: center;
+    padding: 50px;
+}
