@@ -64,23 +64,17 @@
   </header>
 
   <nav>
-  <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background: #005b99;">
-    <div>
-      <a href="index.html" style="color: white; text-decoration: none; font-weight: bold; margin-right: 15px;">Home</a>
-      <a href="services.html" style="color: white; text-decoration: none; font-weight: bold; margin-right: 15px;">Services</a>
-      <a href="about.html" style="color: white; text-decoration: none; font-weight: bold; margin-right: 15px;">About</a>
-      <a href="contact.html" style="color: white; text-decoration: none; font-weight: bold;">Contact</a>
-    </div>
-    <div style="display: flex; align-items: center; gap: 10px;">
-      <input type="text" placeholder="Search..." style="padding: 5px; border-radius: 4px; border: none;">
-      <a href="login.html" style="color: white; font-weight: bold; text-decoration: none;">Login</a>
-      <a href="signup.html" style="color: yellow; font-weight: bold; text-decoration: none;">Sign Up</a>
-    </div>
-  </div>
+  <!-- Search Bar with Inline SVG Icon -->
+<div style="display: flex; align-items: center; border: 1px solid #ccc; border-radius: 25px; padding: 5px 10px; max-width: 400px; margin: auto; background-color: white;">
+  <input type="text" placeholder="Search..." style="border: none; outline: none; padding: 10px; flex: 1; font-size: 16px;">
+  <button style="background: none; border: none; cursor: pointer; padding: 10px;">
+    <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="20" fill="#333">
+      <path d="M0 0h24v24H0z" fill="none"/>
+      <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM9.5 14C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+    </svg>
+  </button>
+</div>
 
-    <a href="services.html">Services</a>
-    <a href="about.html">About</a>
-    <a href="#contact">Contact</a>
   </nav>
 
   <div class="container">
