@@ -5,86 +5,146 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About A2ZLoads</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
-      background-color: #f0f8ff; /* Sky Blue Background */
-      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      font-family: 'Arial', sans-serif;
       color: #333;
       padding: 0;
       margin: 0;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
       align-items: center;
-      height: 100vh;
+    }
+
+    nav {
+      width: 100%;
+      background-color: #007acc;
+      text-align: center;
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+      text-decoration: none;
+      margin: 0 20px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: white;
+      color: #007acc;
     }
 
     .about-container {
-      background-color: #87CEEB; /* Sky Blue */
+      background-color: #87CEEB;
+      margin-top: 40px;
       padding: 50px;
       text-align: center;
       border-radius: 15px;
       box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
       width: 80%;
-      max-width: 800px;
+      max-width: 900px;
       color: white;
+      position: relative;
+    }
+
+    .about-container::before {
+      content: '';
+      background-image: url('https://img.icons8.com/ios/452/butterfly.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 300px;
+      opacity: 0.15;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
     }
 
     .about-container h1 {
-      font-size: 3rem;
-      color: white;
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid white;
+      display: inline-block;
+      padding-bottom: 10px;
     }
 
     .about-container p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
       line-height: 1.8;
-      color: white;
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
-    footer {
-      text-align: center;
-      margin-top: 30px;
-      color: #555;
-    }
-
-    nav {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    nav a {
+    .about-container a.btn {
+      background-color: white;
       color: #007acc;
       font-weight: bold;
       font-size: 1.2rem;
       text-decoration: none;
-      padding: 10px 20px;
-      border-radius: 5px;
-      margin: 0 15px;
-      background-color: #fff;
-      transition: 0.3s;
+      padding: 12px 24px;
+      border-radius: 8px;
+      transition: 0.3s ease;
+      display: inline-block;
+      margin-top: 20px;
     }
 
-    nav a:hover {
-      background-color: #007acc;
+    .about-container a.btn:hover {
+      background-color: #005b99;
       color: white;
+    }
+
+    footer {
+      text-align: center;
+      margin: 40px 0 20px;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .about-container {
+        padding: 30px 20px;
+      }
+
+      .about-container h1 {
+        font-size: 2.5rem;
+      }
+
+      .about-container p {
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
 <body>
 
   <nav>
-    <a href="index.html">Home</a>
+    <a href="index.html">Homepage</a>
     <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <div class="about-container">
     <h1>Shah Zaman</h1>
     <p>
-      Welcome to the About Page! My name is Shah Zaman. I am passionate about delivering high-quality logistics and transportation services to businesses and individuals. My expertise includes freight management, logistics planning, and providing customized solutions for all your delivery needs.
+      Welcome to the About Page! My name is Shah Zaman, and I am passionate about providing logistics solutions and efficient delivery services. With a strong background in freight management and logistics, my mission is to make logistics easier for everyone.
     </p>
     <p>
-      I believe in efficiency, reliability, and customer satisfaction. My goal is to ensure that your products reach their destination safely, on time, and within budget.
+      At A2ZLoads, we offer tailored solutions for your logistics needs, including freight transport, warehousing, and global shipping. Trust us to deliver your goods safely, on time, and within budget.
     </p>
-    <a href="mailto:shahzaman@example.com">Contact Me</a>
+    <a class="btn" href="mailto:shahzaman@example.com">Contact Me</a>
   </div>
 
   <footer>
