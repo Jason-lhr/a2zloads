@@ -1,15 +1,6 @@
-/* Set the background image */
 body {
-    background-image: url('https://raw.githubusercontent.com/jason-lhr/fufu/main/image%2001.png'); /* Update with your image URL */
-    background-size: cover; /* Make sure the image covers the entire background */
-    background-position: center; /* Center the image */
-    background-attachment: fixed; /* Keep the background image fixed while scrolling */
-    margin: 0; /* Remove default margins */
-    height: 100vh; /* Make sure the body takes up the full viewport height */
-    color: white; /* Text color for contrast */
-}
-
-.content {
-    text-align: center;
-    padding: 50px;
+  background-image: url('../image01.png'); /* or adjust path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
