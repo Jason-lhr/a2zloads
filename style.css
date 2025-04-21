@@ -1,6 +1,7 @@
 body {
-  background-image: url('../image01.png'); /* or adjust path */
+  background-image: url('image01.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 100vh;
 }
