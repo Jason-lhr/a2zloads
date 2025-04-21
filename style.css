@@ -1,6 +1,6 @@
 /* Set the background image */
 body {
-    background-image: url('path/to/your/image.jpg'); /* Update with the path to your image */
+    background-image: url('https://raw.githubusercontent.com/yourusername/yourrepo/branch/image%2001.png'); /* Update with the correct path */
     background-size: cover; /* Make sure the image covers the entire background */
     background-position: center; /* Center the image */
     background-attachment: fixed; /* Keep the background image fixed while scrolling */
